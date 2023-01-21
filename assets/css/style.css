@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --colorBlack: #0B0911;
+    --colorWhite: #FFFFFF;
+    --colorPurple: #8257E5;
+    --colorPurpleLight: #9674E5;
+    --colorPurpleDark: #1C162C;
+    --colorGrey: #3C3748;
+    --colorGreyLight: #6A617F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+}
+
+.left-items,
+.right-items {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left-items {
+    margin: 20px 45px 20px 45px;
+}
+
+.right-items {
+    background-color: var(--colorPurpleDark);
+    position: fixed;
+    height: 100vh;
+    padding: 20px 45px;
+    top: 0;
+    right: 0;
+}
+
+.left-items-title {
+    margin: 0 0 35px 0;
+}
+
+.format-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+}
+
+.desc-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.desc-title-right {
+    width: 300px;
+}
+
+.left-items-box {
+    width: 960px;
+    height: 575px;
+    background-color: var(--colorPurpleDark);
+    border-radius: 10px;
+    position: relative;
+}
+
+.box-title-horizontal {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.title-horizontal {
+    display: inline-block;
+    padding: 20px 60px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.box-title-vertical {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.title-vertical {
+    padding: 22px 15px;
+    text-align: center;
+    margin: 0 0 25px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.box-buttons {
+    background-color: var(--colorBlack);
+    width: 870px;
+    height: 515px;
+    padding: 35px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.buttons-primary,
+.buttons-secondary,
+.buttons-tertiary,
+.buttons-cursor {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    vertical-align: top;
+    width: 225px;
+}
+
+.buttons-cursor {
+    width: 105px;
+    position: relative;
+    bottom: 20px;
+}
+
+.cursor-img {
+    text-align: right;
+    width: 50px;
+}
+
+.cursor-img:first-child {
+    position: relative;
+    top: 25px;
+}
+
+.cursor-img:nth-child(2) {
+    position: relative;
+    top: 18px;
+}
+
+.cursor-img:nth-child(3) {
+    position: relative;
+    top: 15px;
+}
+
+.default-primary,
+.default-secundary,
+.default-tertiary {
+    background-color: var(--colorPurple);
+    color: var(--colorWhite);
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border-radius: 25px;
+   
+    outline: none;
+    border: none;
+}
+
+.hover-primary{
+    background-color: var(--colorPurpleLight);
+}
+
+.focus {
+    border: 2px solid var(--colorWhite);
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.load {
+    cursor: progress;
+}
+
+.move {
+    cursor: move;
+}
+
+.default-secundary {
+    background-color: var(--colorGrey);
+}
+
+.hover-secundary {
+    background-color: var(--colorGreyLight);
+}
+
+.default-tertiary {
+    background-color: transparent;
+}
+
+.right-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+}
+
+.right-buttom-1,
+.right-buttom-2,
+.right-buttom-3 {
+    padding: 15px 95px;
+    margin: 0 0 20px 0;
+    background-color: var(--colorPurple);
+    color: var(--colorWhite);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+.right-buttom-1:hover {
+    background-color: var(--colorPurpleLight);
+}
+
+.active {
+    cursor: progress;
+    border: 2px solid var(--colorWhite);
+}
+
+.activeCursor {
+    cursor: progress;
+}
+
+.right-buttom-2 {
+    background-color: var(--colorGrey);
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.right-buttom-3 {
+    background-color: transparent;
+    cursor: move;
+}
+
+.img-buttom {
+    margin: 0 5px 0 0;
+}
+
+.rotate {
+    animation: rotateImage 1s infinite;
+}
+
+@keyframes rotateImage {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media (max-width: 1470px) {
+    .right-items {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .right-items {
+        position: relative;
+        width: max-content;
+        width: 960px;
+        height: fit-content;
+        border-radius: 15px;
+        margin: 10px;
+    }
+
+    .desc-title-right {
+        width: fit-content;
+    }
+
+    .left-items {
+        margin: 10px;
+    }
+}
