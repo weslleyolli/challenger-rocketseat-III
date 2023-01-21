@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto Buttons" src="./img/preview.png" width="100%">
+  <img alt="project Buttons" src="./assets/img/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
